@@ -5,7 +5,7 @@ const Card = () => {
   const [isLogin, setIsLogin] = useState(true);
 
   const [form, setForm] = useState({
-    name: "",
+    username: "",
     email: "",
     password: "",
   });
@@ -45,9 +45,9 @@ const Card = () => {
 
           {!isLogin && (
             <input
-              name="name"
+              name="username"
               onChange={handleChange}
-              placeholder="Name"
+              placeholder="username"
               className="w-full border p-2 rounded"
             />
           )}

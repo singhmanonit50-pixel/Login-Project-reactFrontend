@@ -1,15 +1,11 @@
-import axios from "axios";
+import axios from 'axios';
 
-const BASE_URL = "http://localhost:8080/auth";
+const API = "http://localhost:8080/auth";
 
-export const registerUser = (data) => {
-  return axios.post(`${BASE_URL}/register`, data);
-};
+export const registerUser = (user) =>{
+    return axios.post(`${API}/register`, user);
+}
 
-export const loginUser = (data) => {
-  return axios.post(`${BASE_URL}/login`, data);
-};
-
-export const getUsers = () => {
-  return axios.get(`${BASE_URL}/users`);
-};
+export const loginUser = (user)=>{
+    return axios.post(`${API}/login`, user);
+}
